@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="karty.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0">
+            <Label
+                Text="Karta:"
+                FontSize="32"
+                HorizontalOptions="Center"/>
+            <HorizontalStackLayout x:Name="karty" Spacing="-210"
+                                   HorizontalOptions="Center">
+                
+            </HorizontalStackLayout>
+            <Button
+                WidthRequest="150"
+                Text="Losuj"
+                HorizontalOptions="Center"
+                x:Name="btnLosuj"
+                Clicked="btnLosujClicked"/>
+            <Label
+                x:Name="lblLos"
+                Text=""/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
